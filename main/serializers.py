@@ -54,6 +54,14 @@ class MovieCreateSerializer(serializers.Serializer):
     genres = serializers.ListField(child=serializers.IntegerField())
     created_genres = serializers.ListField(child=GenreCreateSerializer())
 
+    # """Русская раскласдка"""
+    #
+    # def validate_name(self, name):
+    #     for i in name:
+    #         if ord(i) >= 1040 and ord(i) <= 1103:
+    #             raise ValidationError('Pleace use english only')
+    #     return name
+
     # def validate_name(self, name):
     #     movies = Movie.objects.filter(name=name)
     #     if movies:
