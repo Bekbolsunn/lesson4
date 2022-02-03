@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f526a176-af4d-481d-b571-27eeeb0b1f46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_backend/settings.py" afterDir="false" />
@@ -55,8 +47,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop_backend" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration default="true" type="DjangoTestsConfigurationType">
@@ -150,6 +142,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="movie_backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,6 +267,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
         <item itemvalue="Python.admin" />
       </list>
     </recent_temporary>
@@ -276,7 +291,15 @@
       <workItem from="1642577361406" duration="30000" />
       <workItem from="1642771477682" duration="4790000" />
       <workItem from="1642830086680" duration="31000" />
-      <workItem from="1643016733498" duration="305000" />
+      <workItem from="1643016733498" duration="2043000" />
+      <workItem from="1643117774174" duration="3822000" />
+      <workItem from="1643192507010" duration="9000" />
+      <workItem from="1643268858310" duration="3470000" />
+      <workItem from="1643275255520" duration="2009000" />
+      <workItem from="1643281900997" duration="1171000" />
+      <workItem from="1643283610026" duration="181000" />
+      <workItem from="1643371861650" duration="2889000" />
+      <workItem from="1643612772866" duration="524000" />
     </task>
     <servers />
   </component>

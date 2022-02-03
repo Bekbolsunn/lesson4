@@ -74,3 +74,5 @@ class MovieCreateSerializer(serializers.Serializer):
         if movies:
             raise ValidationError('Movie already exists!')
         return name
+
+

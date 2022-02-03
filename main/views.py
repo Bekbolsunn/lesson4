@@ -3,6 +3,13 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import MovieSerializer, MovieDetailSerializer, MovieCreateSerializer
 from .models import Movie
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, \
+    GenericAPIView
+from main.models import Genre
+from main.serializers import GenreSerializer
+from rest_framework.pagination import PageNumberPagination
+from django.contrib.auth import authenticate
+from rest_framework.authtoken.models import Token
 
 
 @api_view(['GET'])
@@ -59,9 +66,31 @@ def movie_detail_view(request, id):
         return Response(data={'message': 'Movie successfully removed!'})
 
 
-"""
-{
-"name":"aza",
-"age":20
-}
-"""
+class GenreCreateListAPIView(ListCreateAPIView):
+    queryset = Genre.objects.all()
+    serializer_class = GenreSerializer
+    pagination_class = PageNumberPagination
+
+    # def create(self, request, *args, **kwargs):
+
+
+class GenreDetailUpdateDeleteAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = Genre.objects.all()
+    serializer_class = GenreSerializer
+    lookup_field = 'pk'
+
+
+class LoginAPIView(GenericAPIView):
+    def post(self, request):
+        username = request.data['username']
+        password = request.data['password']
+        user = authenticate(username=username, password=password)
+        if user:
+            try:
+                token = Token.objects.get(user=user)
+            except Token.DoesNotExist:
+                token = Token.objects.create(user=user)
+            token = Token.objects.get(user=user)
+            return Response(data={'token': token.key})
+        return Response(data={'user not found'}, status=404)
+

@@ -45,7 +45,8 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication'
-    ]
+    ],
+    "PAGE_SIZE": 2
 }
 
 MIDDLEWARE = [
@@ -84,8 +85,14 @@ WSGI_APPLICATION = 'movie_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': "django.db.backends.postgresql_psycopg2",
+        "NAME": "movie_db",
+        "USER": "master",
+        "PASSWORD": "123",
+        "PORT": 5432,
+        "HOST": "localhost"
     }
 }
 
